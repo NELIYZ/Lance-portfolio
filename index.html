@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lance Nelson — Server Administration & Cybersecurity</title>
+  <meta name="description" content="Lance Nelson — CompTIA A+ and Security+ certified server administration and cybersecurity student at Neumont University. Graduating September 2027." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Righteous&family=Outfit:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======= SKY SCENE ======= -->
+  <div class="sky" aria-hidden="true">
+    <div class="stars" id="stars"></div>
+
+    <div class="cloud cloud-1"><i></i><i></i><i></i></div>
+    <div class="cloud cloud-2"><i></i><i></i><i></i></div>
+    <div class="cloud cloud-3"><i></i><i></i><i></i></div>
+    <div class="cloud cloud-4"><i></i><i></i><i></i></div>
+
+    <div class="sun"></div>
+    <div class="horizon-grid"></div>
+  </div>
+
+  <!-- ======= NAV ======= -->
+  <nav class="topnav">
+    <a class="brand" href="#top">LN<span class="brand-dot">▪</span></a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#certs">Certs</a>
+      <a href="#education">Education</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ======= HERO ======= -->
+  <header class="hero" id="top">
+    <p class="eyebrow pixel">// SERVER ADMIN · CYBERSECURITY</p>
+    <h1>Lance<br/>Nelson</h1>
+    <p class="tagline">
+      CompTIA A+ and Security+ certified. I build servers, break them safely,
+      and learn from every reboot.
+    </p>
+    <div class="hero-badges">
+      <span class="chip">▲ CompTIA A+</span>
+      <span class="chip">▲ Security+</span>
+      <span class="chip">◆ Class of 2027</span>
+    </div>
+    <a class="cta" href="#work">See my work ↓</a>
+  </header>
+
+  <main>
+
+    <!-- ======= ABOUT ======= -->
+    <section id="about" class="reveal">
+      <p class="eyebrow pixel">// ABOUT</p>
+      <h2>Hands-on since day one</h2>
+      <p class="body-lg">
+        I'm a Computer Science student at Neumont University focused on server
+        administration and cybersecurity. Most of what I know comes from building
+        things myself — a full security homelab, clustered hypervisors, hardened
+        Linux servers — then documenting what worked and fixing what didn't.
+      </p>
+      <div class="stat-row">
+        <div class="stat"><strong>2</strong><span>CompTIA certifications</span></div>
+        <div class="stat"><strong>2027</strong><span>Expected graduation</span></div>
+        <div class="stat"><strong>1</strong><span>Homelab, always evolving</span></div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true">✦ ✦ ✦</div>
+
+    <!-- ======= CERTS ======= -->
+    <section id="certs" class="reveal">
+      <p class="eyebrow pixel">// CERTIFICATIONS</p>
+      <h2>Certified &amp; verified</h2>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-icon pixel">A+</div>
+          <h3>CompTIA A+</h3>
+          <p>Hardware, operating systems, troubleshooting methodology, and end-user support fundamentals.</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon pixel">S+</div>
+          <h3>CompTIA Security+</h3>
+          <p>Threats and vulnerabilities, access control, cryptography basics, and secure network architecture.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true">✦ ✦ ✦</div>
+
+    <!-- ======= EDUCATION ======= -->
+    <section id="education" class="reveal">
+      <p class="eyebrow pixel">// EDUCATION</p>
+      <h2>Neumont University</h2>
+      <div class="edu-card">
+        <div class="edu-head">
+          <div>
+            <h3>B.S. Computer Science</h3>
+            <p class="muted">Salt Lake City, UT · Expected September 2027</p>
+          </div>
+          <span class="chip solid">In progress</span>
+        </div>
+        <p>
+          Project-based program with a focus on doing, not just reading. Relevant
+          coursework so far:
+        </p>
+        <ul class="tag-list">
+          <li>Ethical Hacking</li>
+          <li>Virtualization</li>
+          <li>Network Perimeter Security</li>
+          <li>Database Engineering</li>
+          <li>Data Analysis</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true">✦ ✦ ✦</div>
+
+    <!-- ======= WORK / ACCOMPLISHMENTS ======= -->
+    <section id="work" class="reveal">
+      <p class="eyebrow pixel">// SELECTED WORK</p>
+      <h2>Things I've built</h2>
+
+      <div class="work-grid">
+        <article class="work-card">
+          <h3>Cybersecurity Homelab <span class="chip mini">Flagship</span></h3>
+          <p>
+            Built a full security lab from scratch on Rocky Linux using KVM/libvirt:
+            an isolated attack range with Kali Linux and Metasploitable 2, plus a
+            Wazuh SIEM watching everything. Designed as both a learning environment
+            and a portfolio piece.
+          </p>
+          <p class="tools">Rocky Linux · KVM/libvirt · Kali · Wazuh · Metasploitable</p>
+        </article>
+
+        <article class="work-card">
+          <h3>3-Node Proxmox VE Cluster</h3>
+          <p>
+            Configured a three-node Proxmox cluster on Dell blade servers in a
+            university server room — VLAN-segmented networking, corosync clustering,
+            and quorum management across physical hosts.
+          </p>
+          <p class="tools">Proxmox VE · VLANs · corosync · Dell PowerEdge</p>
+        </article>
+
+        <article class="work-card">
+          <h3>StreamShare — Capstone Proposal</h3>
+          <p>
+            Designed a cross-platform social music app integrating Spotify and
+            Last.fm, with a security-first architecture: OAuth 2.0 with PKCE,
+            AES-256-GCM token encryption, and JWT session management.
+          </p>
+          <p class="tools">OAuth 2.0 / PKCE · AES-256-GCM · JWT · API design</p>
+        </article>
+
+        <article class="work-card">
+          <h3>Multi-Disk Rocky Linux Server</h3>
+          <p>
+            Deployed Rocky Linux with a multi-disk layout, isolating <code>/var</code>
+            on its own drive for logging separation, and verified the final layout
+            from the command line.
+          </p>
+          <p class="tools">Rocky Linux · partitioning · CLI</p>
+        </article>
+
+        <article class="work-card">
+          <h3>Python Automation Utilities</h3>
+          <p>
+            Scripts that automate repetitive admin tasks — log parsing, monitoring
+            helpers, and small tools that reduce manual errors and save time.
+          </p>
+          <p class="tools">Python · log parsing · monitoring</p>
+        </article>
+
+        <article class="work-card">
+          <h3>Pewest Quest <span class="chip mini">For fun</span></h3>
+          <p>
+            A creature-collecting roguelike card game I'm building in Godot 4 —
+            complete with a full game design document. It's how I taught myself
+            to code by shipping something I actually care about.
+          </p>
+          <p class="tools">Godot 4 · GDScript · game design</p>
+        </article>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true">✦ ✦ ✦</div>
+
+    <!-- ======= SKILLS ======= -->
+    <section id="skills" class="reveal">
+      <p class="eyebrow pixel">// SKILLS</p>
+      <h2>What I work with</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Systems</h3>
+          <ul class="tag-list">
+            <li>Rocky Linux</li><li>Ubuntu</li><li>Windows Server</li>
+            <li>Users &amp; permissions</li><li>Service management</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Virtualization</h3>
+          <ul class="tag-list">
+            <li>Proxmox VE</li><li>KVM / libvirt</li><li>VMware</li>
+            <li>VirtualBox</li><li>Isolated networks</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Security</h3>
+          <ul class="tag-list">
+            <li>Wazuh SIEM</li><li>Kali Linux</li><li>Recon &amp; enumeration</li>
+            <li>Access control</li><li>Hardening</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Scripting &amp; Data</h3>
+          <ul class="tag-list">
+            <li>Python</li><li>Bash</li><li>SQL Server</li>
+            <li>MongoDB</li><li>Log analysis</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true">✦ ✦ ✦</div>
+
+    <!-- ======= CONTACT ======= -->
+    <section id="contact" class="reveal">
+      <p class="eyebrow pixel">// CONTACT</p>
+      <h2>Let's connect</h2>
+      <p class="body-lg">
+        Open to internships, entry-level roles, and interesting projects in
+        server administration and security.
+      </p>
+      <div class="contact-actions">
+        <a class="cta" href="https://github.com/okam3" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="cta ghost" href="mailto:hello@example.com" id="emailLink">Email me ↗</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p class="pixel">★ LANCE NELSON · EST. 2027 ★</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
